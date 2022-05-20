@@ -1,0 +1,36 @@
+
+R version 4.2.0 (2022-04-22 ucrt) -- "Vigorous Calisthenics"
+Copyright (C) 2022 The R Foundation for Statistical Computing
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+
+R es un software libre y viene sin GARANTIA ALGUNA.
+Usted puede redistribuirlo bajo ciertas circunstancias.
+Escriba 'license()' o 'licence()' para detalles de distribucion.
+
+R es un proyecto colaborativo con muchos contribuyentes.
+Escriba 'contributors()' para obtener más información y
+'citation()' para saber cómo citar R o paquetes de R en publicaciones.
+
+Escriba 'demo()' para demostraciones, 'help()' para el sistema on-line de ayuda,
+o 'help.start()' para abrir el sistema de ayuda HTML con su navegador.
+Escriba 'q()' para salir de R.
+
+[Previously saved workspace restored]
+
+> df <- iris[1:4]
+> pairs(df)
+> pairs(~ Sepal.Length + Sepal.Width +
++          Petal.Length + Petal.Width, data = df)
+>  with(df, pairs(~ Sepal.Length + Sepal.Width +
++                  Petal.Length + Petal.Width))
+> plot(df)
+> df <- iris[1:4]
+> especies <- iris[, 5]
+> l <- length(unique(especies))
+> 
+> colores <- c("red", "green", "blue")
+> pairs(df,
++       pch = 22,   
++   col =colores[especies])
+> save.image("E:\\keitL\\UMSA 2022\\SEMESTRE I-2022\\319\\pregunta_5")
+> 
