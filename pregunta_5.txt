@@ -32,5 +32,4 @@ Escriba 'q()' para salir de R.
 > pairs(df,
 +       pch = 22,   
 +   col =colores[especies])
-> save.image("E:\\keitL\\UMSA 2022\\SEMESTRE I-2022\\319\\pregunta_5")
 > 
